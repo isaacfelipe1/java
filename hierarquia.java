@@ -83,8 +83,7 @@ public class Hierarquia {
         // Imprimindo as hierarquia: 
         System.out.println(var1.nome); 
         System.out.println(var1.m.f.c.nome);
-        //System.out.println(var1.p.f.m.m.nome); seria a joana 
-        // para imprimir na tela
+       //System.out.println(var1.p.f.m.m.nome); seria a Fernanda
         System.out.println(var1.m.f.c.m.f.nome);
    
     }
