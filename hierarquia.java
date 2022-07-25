@@ -40,9 +40,7 @@ public class Hierarquia {
         ricardo=new Pessoa();
         ricardo.nome="Ricarcdo";
         ricardo.f=arthur;
-        // objeto antonio e seus dados, não estou conseguindo
-        //colocar o filho favorito do antonio que é o rodolfo.
-        //Sempre da erro
+        // objeto antonio e seus dados
         Pessoa antonio;
         antonio=new Pessoa();
         antonio.nome="Antonio";
@@ -78,13 +76,14 @@ public class Hierarquia {
         var1.nome="Rodolfo";
         var1.m=pietra;
         var1.p=antonio;
+        antonio.f=var1;
  
        
         // Imprimindo as hierarquia: 
-        System.out.println(var1.nome); 
-        System.out.println(var1.m.f.c.nome);
-       //System.out.println(var1.p.f.m.m.nome); //seria a Fernanda
-        System.out.println(var1.m.f.c.m.f.nome);
+        System.out.println(var1.nome); // Rodolfo 
+        System.out.println(var1.m.f.c.nome); // Bianca
+        System.out.println(var1.p.f.m.m.nome); // Fernanda
+        System.out.println(var1.m.f.c.m.f.nome); // Arthur
    
     }
 
